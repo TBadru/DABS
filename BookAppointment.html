@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BOOK APPOINTMENT</title>
+	<link rel="stylesheet" href="jquery.datetimepicker.min.css"/> 
+    <link rel="stylesheet" type="text/css" href="book.css">
+
+
+	<script src="jquery.js"></script>
+	<script src="jquery.datetimepicker.full.js"></script>
+	<script>
+		$(function(){
+			$('#datetimepicker').datetimepicker({
+    format:'Y-m-d h:i',
+	step: 15   
+});
+		});
+</script>
+<style>
+ body{     
+            }
+</style>
+</head>
+<body>
+<h1 style="color: red; text-align: center;">BOOK APPOINTMENT</h1>
+<p style="color: red; text-align: center;">Book your Doctor's appointment below.</p>
+
+<form  action="doc.php" method="POST">
+	Name: <br>
+	<input type="text" name="name"><br><br>
+	Select Doctor:<br>
+	<select name="doctor">
+	    <option value="null"></option>
+		<option value="Dr.David">Dr.David</option>
+		<option value="Dr.Sam">Dr.Sam</option>
+		<option value="Dr.Hassim">Dr.Hassim</option>
+		<option value="Dr.Jack">Dr.Jack</option>	
+		
+	</select><br><br>
+	Date:<br>
+	<p><input type="text" id="datetimepicker" name="datetime"></p><br>
+	<input type="submit" name="submit" value="submit" id="sub" style="
+    border-radius: 4px; padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+
+" onclick= 'return checkconfirm()'>
+
+</form>
+
+</body>
+<script>
+	function checkconfirm()
+{
+	return confirm('confirm Appointment?');
+}
+</script>
+</html>
+
+

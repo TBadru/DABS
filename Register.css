@@ -1,0 +1,28 @@
+
+*{
+	margin: 0;
+	padding:0;
+}
+h1{
+	color: red;
+	text-align: center;
+	padding: 20px;
+}
+h2{
+	color: red;
+	text-align: center;
+	padding: 20px;
+}
+body {
+	
+	background-size: cover;
+}
+.register{
+	background-image: url(); 
+	background-color: 
+	background-size: cover;
+    width: 500px;
+    margin: 0px 0px 0px 480px;
+    color: black;
+    font-size: 14px;
+}
